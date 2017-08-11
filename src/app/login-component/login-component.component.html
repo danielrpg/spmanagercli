@@ -1,0 +1,13 @@
+<form class="form-signin" (ngSubmit)="onSubmit()">
+    <h2 class="form-signin-heading">Ingresar al Sistema</h2>
+    <label for="email" class="sr-only">Correo electronico</label>
+    <input type="email" [(ngModel)]="User.email" id="email" class="form-control" placeholder="Correo electronico" required autofocus>
+    <label for="inputPassword" class="sr-only">Contraseña</label>
+    <input type="password" [(ngModel)]="User.password" id="inputPassword" class="form-control" placeholder="Contraseña" required="">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" value="remember-me"> Recuerdame
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+  </form>
